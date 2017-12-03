@@ -41,20 +41,14 @@
     (modify-syntax-entry ?\" "\"" st)
     (modify-syntax-entry ?# "<" st)
     (modify-syntax-entry ?\n "> st")
-    (modify-syntax-entry ?\{ "(")
-    (modify-syntax-entry ?\} ")")
     st))
 
 (define-derived-mode flori-mode fundamental-mode "Flori"
   :syntax-table flori-mode-syntax-table
   (setq indent-tabs-mode nil)
   (setq indent-line-function #'flori-indent-line)
-  (setq comment-start ";;")
+  (setq comment-start "#")
   (setq font-lock-defaults '(flori-font-lock-keywords)))
-(font-lock-add-keywords 'flori-mode
-                        '(("set!" . font-lock-keyword-face)))
-(font-lock-add-keywords 'flori-mode
-                        '(("destructor" . font-lock-builtin-face)))
 
 (provide 'flori-mode)
 (add-to-list 'auto-mode-alist '("\\.flori$" . flori-mode))
