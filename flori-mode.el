@@ -26,8 +26,6 @@
 (defun flori-indent-line ()
   (interactive)
   (beginning-of-line)
-  (if (eq cur-indent nil)
-      (setq cur-indent 0))
   (save-excursion
     (if (looking-at "^[ \t]*\}")
         (indent-line-to (* 2 (- (car (syntax-ppss)) 1)))
