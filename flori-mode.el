@@ -2,7 +2,7 @@
 (setq flori-ident "\\(\\([a-z]\\|[A-Z]\\)\\([a-z]\\|[A-Z]\\|[0-9]\\|_\\)*?\\)")
 (setq flori-separates "\\((\\|)\\|\\[\\|\\]\\|\s\\|\n\\|\r\\|,\\)")
 
-(setq flori-keywords '("match" "if" "elif" "else" "for" "while" "import" "return" "init" "ref" "when" "destructor"))
+(setq flori-keywords '("match" "if" "elif" "else" "for" "while" "import" "return" "init" "ref" "move" "when" "destructor"))
 (setq flori-attrs '("destruct" "track"))
 (setq flori-defs "\\(fn\\|type\\|macro\\|syntax\\|iterator\\|var\\|const\\)")
 
