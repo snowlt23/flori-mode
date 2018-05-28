@@ -4,7 +4,7 @@
 
 (setq flori-keywords '("match" "if" "elif" "else" "for" "while" "import" "return" "break" "init" "ref" "move" "when" "destructor"))
 (setq flori-attrs '("destruct"))
-(setq flori-defs "\\(fn\\|type\\|macro\\|syntax\\|iterator\\|var\\|const\\|typedef\\)")
+(setq flori-defs "\\(fn\\|type\\|macro\\|syntax\\|iterator\\|var\\|const\\|typedef\\|enum\\)")
 
 (setq flori-keywords-regexp (regexp-opt flori-keywords 'words))
 (setq flori-def-regexp (concat flori-ident "\s*:=\s*"))
